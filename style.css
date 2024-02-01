@@ -19,7 +19,7 @@ body{
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
-    /* overflow: overlay; */
+    overflow: auto;
 }
 p {
     color: rgb(255, 255, 255);
