@@ -11,12 +11,15 @@ html {
     font-family: 'Roboto', sans-serif;
     scroll-behavior: smooth;
 }
+body::-webkit-scrollbar{
+    display: none;
+}
 body{
     background-image: url(https://www.bhmpics.com/downloads/black-screen-desktop-Wallpapers/1.961978.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
-    overflow: auto;
+    /* overflow: overlay; */
 }
 p {
     color: rgb(255, 255, 255);
