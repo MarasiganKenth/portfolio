@@ -350,3 +350,50 @@ li:hover{
 #footer p{
     font-size: 1rem;
 }
+.fireflies{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    /* overflow: hidden; */
+}
+.firefly{
+    position: fixed;
+    display: flex;
+}
+.firefly span{
+    position: relative;
+    width:  20px;
+    height: 20px;
+    background: #ffffff;
+    margin: 0 30px;
+    border-radius: 70%;
+    /* box-shadow: 0 0 0 10px #e6f06444; */
+    box-shadow:
+        0 0 10px rgb(92, 228, 205),
+        0 0 21px rgb(92, 228, 205),
+        0 0 28px rgb(92, 228, 205),
+        0 0 40px rgb(92, 228, 205),
+        0 0 52px rgb(92, 228, 205);
+    animation: float 15s linear infinite;
+    animation-duration: calc(120s / var(--i));
+}
+.firefly span:nth-child(even){
+    background: #ffffff;
+    /* box-shadow: 0 0 0 8px #7083c1c5,
+    0 0 0 12px #7083c193,
+    0 0 0 15px #7083c160; */
+    box-shadow:
+        0 0 10px rgb(92, 228, 205),
+        0 0 21px rgb(92, 228, 205),
+        0 0 28px rgb(92, 228, 205),
+        0 0 40px rgb(92, 228, 205),
+        0 0 52px rgb(92, 228, 205);
+}
+@keyframes float{
+    0%{
+        transform: translateY(100vh) scale(0.2);
+    }
+    100%{
+        transform: translateY(-10vh) scale(0.5);
+    }
+}
